@@ -114,7 +114,7 @@ for (const produto in estoque) {
 }*/
 
 
-const carrinho = [
+/*const carrinho = [
     {produto: "Camiseta", preco: 49.90, quantidade: 2},
     {produto: "Calca Jeans", preco: 129.90, quantidade: 1},
     {produto: "Tenis", preco: 199.90, quantidade: 1},
@@ -130,4 +130,239 @@ for (const item of carrinho) {
 
     console.log(`${item.produto} (${item.quantidade}x) - R$ ${subtotal.toFixed(2)}`)
     
+}*/
+
+
+
+
+
+/*const numeros = [5, 12, 8, 3, 19, 7, 25];
+
+const procurado = 19;
+
+for (const num of numeros) {
+
+    if (num === procurado) {
+
+        console.log("Encontrado");
+
+        break;
+    }
 }
+
+console.log("Loop terminou!");*/
+
+
+
+
+// Senha com limite de 3 tentativas
+
+/*const senhaCorreta = "abc123";
+
+const maxTentativas = 3;
+
+for (let tentativas = 1; tentativas < maxTentativas; tentativas++) {
+
+    const senha = prompt(`Tentativa ${tentativa}/${maxTentativas} - Digite a senha:`);
+
+    if (senha === senhaCorreta) {
+
+        console.log("Acesso Liberado!");
+
+        break;
+        
+    } else {
+        
+        console.log("Senha incorreta!");
+
+        if (tentativa === maxTentativas) {
+            console.log("Conta Bloqueada!");
+        }
+    }
+}*/
+
+
+
+/*for (let i = 1; i <= 10; i++) {
+    
+    if (i % 2 === 0) {
+       continue; 
+    }
+    console.log(i)
+}*/
+
+
+
+// Mostrar apenas  APROVADOS ( nota)
+
+/*const alunos = [
+  { nome: "Ana", nota: 8.5 },
+  { nome: "Bruno", nota: 5.0 },
+  { nome: "Carlos", nota: 9.0 },
+  { nome: "Diana", nota: 4.5 },
+  { nome: "Eduardo", nota: 7.5 }
+];
+
+for (const aluno of alunos) {
+
+    if(aluno.nota < 7) {
+        continue;
+    }
+
+    console.log(`${aluno.nome} - Nota: ${aluno.nota}`)
+}*/
+
+
+
+// Contar vogais
+
+/*const frase = prompt("Digite uma frase");
+
+const vogais = "aeiouAEIOU";
+
+let contador = 0;
+
+let vogaisEncontradas = [];
+
+for (const letra of frase) {
+    
+    if (vogais.includes(letra)) {
+        
+        contador++
+
+        vogaisEncontradas.push(letra)
+    }
+
+}
+
+console.log(`\nFrase: "${frase}"`);
+
+console.log(`Quantidade de vogais: "${contador}"`);
+
+console.log(`Vogais encontradas: "${vogaisEncontradas.join(", ")}"`);*/
+
+
+
+
+
+
+/*const frase = prompt("Digite uma frase:");
+
+let vogais = [];
+
+let consoantes = [];
+
+for (const letra of frase) {
+
+    const caractere = letra.toLowerCase();
+
+    if (caractere >= "a" && caractere <= "z") {
+        
+
+        if ("aeiou".includes(caractere)) {
+
+            vogais.push(letra)
+            
+        
+    } else {
+        consoantes.push(letra)
+    }
+}
+}*/
+
+
+
+/*Array.metodo((elemento, index, array) => {
+    return;
+})*/
+
+
+
+/*const frutas = ["Maca", "Banana", "Uva"];
+
+frutas.forEach((element, index) => {
+    console.log(index, element)
+
+});
+
+for (let i = 0; i < frutas.length; i++) {
+
+
+}*/
+
+
+
+
+
+//Filter
+
+
+/*const novoArray = Array.filter((element) => {
+    return condicao;
+
+});*/
+
+
+
+
+
+
+/*const pessoas = [
+  { nome: "Lucas", idade: 20 },
+  { nome: "Maria", idade: 17 },
+  { nome: "João", idade: 18 },
+  { nome: "Ana", idade: 22 },
+];
+
+
+const maioresDeIdade = pessoas.filter((pessoa)=>{
+
+    return pessoa.idade >= 18;
+});
+
+console.log(maioresDeIdade)*/
+
+
+
+
+
+/*const numeros = [1,2,3,4,5,6,7,8];
+
+const pares = numeros.filter((numero)=> {
+   
+    return numero % 2 === 0 
+});
+
+console.log(pares)*/
+
+
+
+/*const pessoas = [
+  { nome: "Lucas", idade: 20 },
+  { nome: "Maria", idade: 17 },
+  { nome: "João", idade: 18 },
+  { nome: "Ana", idade: 22 },
+];
+
+const idosos = pessoas.filter((pessoa)=>{
+return pessoa.idade > 80;
+});
+
+console.log(idosos)*/
+
+
+
+// crie um array com varios numeros.
+//use filter para mostrar apenas os numeros maiores que 50.
+
+
+const numeros = [10,25,50,60,75,30,90,45,100];
+
+const maioresQue50 = numeros.filter((numero)=> {
+    return numero > 50;
+});
+
+console.log(maioresQue50)
+
+
+
