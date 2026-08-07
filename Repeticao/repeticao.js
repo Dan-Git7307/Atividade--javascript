@@ -599,7 +599,7 @@ console.log(resultado);*/
 //Use reduce para descobrir:
 //qual o maior numero do array.
 
-const numeros= [10,50,30,100,25];
+/*const numeros= [10,50,30,100,25];
 
 const maior = numeros.reduce((acc, numero) => {
        if (numero > acc) {
@@ -609,4 +609,172 @@ const maior = numeros.reduce((acc, numero) => {
        return acc 
 }, numeros[0]);
 
-console.log(maior);
+console.log(maior);*/
+
+
+
+
+
+
+
+
+
+
+/*
+# Parte 1
+Use filter para pegar notas >= 8
+---
+# Parte 2
+
+
+Use map para pegar apenas nomes
+
+---
+# Parte 3
+
+```
+Use find para encontrar "Batman"
+```
+
+---
+
+# Parte 4
+
+Use reduce para somar todas as notas
+*/
+
+
+/*const filmes= [
+  { nome:"Vingadores", nota:9 },
+  { nome:"Batman", nota:7 },
+  { nome:"Dragon Ball", nota:10 },
+  { nome:"Matrix", nota:8 }
+];*/
+
+
+/*const notas = filmes.filter((pessoa)=> {
+      return pessoa.nota >= 8;
+});
+
+console.log(notas);*/
+
+
+
+/*const nomes = filmes.map((filmes)=> {
+      return filmes.nome;
+});
+
+console.log(nomes);*/
+
+
+
+
+/*const batman = filmes.find((filme) => {
+      return filme.nome === "Batman";
+});
+
+console.log(batman);*/
+
+
+
+/*const somaNotas = filmes.reduce((acc, filme) => {
+     return acc + filme.nota;
+});
+console.log(somaNotas);*/
+
+
+
+
+//switch case
+
+/*const dia = 3;
+
+switch (dia) {
+    case 1:
+        console.log("Domingo");
+        break;
+    case 2:
+        console.log("Segunda");
+        break;
+    case 3:
+        console.log("Terca");
+        break;
+
+    default:
+        console.log("Dia Invalido");
+        break;
+}*/
+
+
+
+/*const n1 = Number(prompt("Digite o primeiro numero:"));
+const n2 = Number(prompt("Digite o primeiro numero:"));
+const operacao = prompt("Digite a operacao (+, -, * ou /):");
+
+switch (operacao) {
+    case "+":
+        console.log(`Resultado: ${n1 + n2}`)
+        break;
+    case "-":
+        console.log(`Resultado: ${n1 + n2}`)
+        break;
+    case "*":
+        console.log(`Resultado: ${n1 + n2}`)
+        break;
+    case "/":
+        if (n2 === 0) {
+            console.log("Erro: nao e possivel dividir por zero")
+        } else {
+            console.log.apply(`Resultado: ${n1 / n2}`)
+        }
+        console.log(`Resultado: ${n1 + n2}`)
+        break;
+
+    default:
+        console.log("Operacao Invalida");
+        break;
+}*/
+
+
+
+
+
+
+
+/*Crie um sistema de menu de video game:
+
+1- Jogar
+2- Configuracoes
+3- Creditos
+4- Sair*/
+
+
+let opcao;
+
+do {
+    opcao = prompt(
+      "MENU DO JOGO 1- Jogar  2- Configuracoes 3- Creditos 4- sair  Escolha uma opcao:"
+    );
+
+    switch (opcao) {
+        case "1":
+            console.log("Iniciando o jogo");
+            break;
+        case "2":
+            console.log("Configurando o jogo");
+            break;
+        case "3":
+            console.log("Creditos Desenvolvidos");
+            break;
+        case "4":
+            console.log("Saindo do jogo");
+            break;
+    
+        default:
+            console.log("Opcao Invalida");
+            break;
+    }
+    
+
+
+} while (opcao !== "4");
